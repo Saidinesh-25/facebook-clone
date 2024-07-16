@@ -1,8 +1,13 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header";
+import Head from "next/head";
 
 export default function Home() {
-  return <div>I am building faceBook clone. </div>;
+  return (
+    <div>
+      <Head>
+        <title>Facebook</title>
+      </Head>
+      <Header />
+    </div>
+  );
 }
